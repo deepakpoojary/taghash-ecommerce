@@ -13,7 +13,7 @@ const ReviewForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("/api/reviews", {
+      await axios.post("http://localhost:5000/api/reviews", {//using 
         productName,
         reviewerName,
         reviewerEmail,
